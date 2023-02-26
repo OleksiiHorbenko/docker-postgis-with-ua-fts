@@ -6,7 +6,8 @@ To run locally, you need docker to be installed on your machine.
 
 `docker-compose -f docker/postgis/postgresql.yml up -d`
 
-## To Change Password or connection settings - change params in `pgsql.env` environment values (admin is used as password by-default)
+## To Change Password or connection settings 
+- change params in `pgsql.env` environment values (admin is used as password by-default)
 
 ## Postgres FTS Documentation
 - [Postgres Full-Text Search (FTS) usage documentation](https://www.postgresql.org/docs/current/textsearch.html)
