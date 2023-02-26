@@ -3,7 +3,10 @@ Docker Compose definition of the PostgreSQL with Postgis Extension and UA dictio
 
 ## Run Locally
 To run locally, you need docker to be installed on your machine. 
+
 `docker-compose -f docker/postgis/postgresql.yml up -d`
+
+## To Change Password or connection settings - change params in `pgsql.env` environment values (admin is used as password by-default)
 
 ## Postgres FTS Documentation
 - [Postgres Full-Text Search (FTS) usage documentation](https://www.postgresql.org/docs/current/textsearch.html)
@@ -12,6 +15,7 @@ To run locally, you need docker to be installed on your machine.
 ### Simple Verification
 - Input SQL: `SELECT to_tsvector('ukrainian', 'Перевірка токенізації із відмінниками');`
 - Expected Output: `'відмінник':4 'перевірка':1 'токенізація':2 'із':3`
+
 
 ## Tools Used
 Please, take a look at
